@@ -1,0 +1,2 @@
+# HashSpeedTest
+HashSpeedTest

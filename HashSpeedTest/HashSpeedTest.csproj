@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.ServiceFabric.Actors">
+      <HintPath>E:\CxCache\Microsoft.ServiceFabric.Actors.4.1.409\lib\net45\Microsoft.ServiceFabric.Actors.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ServiceFabric.Internal">
+      <HintPath>E:\CxCache\Microsoft.ServiceFabric.7.1.409\lib\net472\Microsoft.ServiceFabric.Internal.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ServiceFabric.Services">
+      <HintPath>E:\CxCache\Microsoft.ServiceFabric.Services.4.1.409\lib\net472\Microsoft.ServiceFabric.Services.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

@@ -65,7 +65,7 @@ namespace HashSpeedTest
 
             Console.WriteLine();
             Console.WriteLine($"{algorithmName} took: {stopWatch.Elapsed}");
-            Console.WriteLine(string.Join(", ", bucketHits.Select(h => ((ulong)h).ToString())));
+            Console.WriteLine($"BucketHits: {string.Join(", ", bucketHits.Select(h => ((ulong)h).ToString()))}");
             Console.WriteLine($"Max: {bucketHits.Max()}, Min: {bucketHits.Min()}, MaxMinDelta: {bucketHits.Max() - bucketHits.Min()}");
         }
 

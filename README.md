@@ -20,37 +20,37 @@ And Example Run
 Iterations: 10000000
 
 Algorithm: CRC32
-Time to generate:  00:00:03.6054792
-Bucket Hits: 1999193, 2000728, 2001119, 1999842, 1999118
-Bucket Stats: Max: 2001119, Min: 1999118, MaxMinDelta: 2001
+Time to generate: 00:00:03.9287843
+Bucket Hits: 1999163, 1999287, 2000497, 2000252, 2000801
+Bucket Stats: Max: 2000801, Min: 1999163, MaxMinDelta: 1638
 
 Algorithm: Fnv1a
-Time to generate:  00:00:02.0496456
-Bucket Hits: 1999328, 2000920, 2000337, 1998854, 2000561
-Bucket Stats: Max: 2000920, Min: 1998854, MaxMinDelta: 2066
+Time to generate: 00:00:02.2127846
+Bucket Hits: 1999539, 1999020, 2000282, 2001366, 1999793
+Bucket Stats: Max: 2001366, Min: 1999020, MaxMinDelta: 2346
 
 Algorithm: GetHashCode
-Time to generate:  00:00:00.8273842
-Bucket Hits: 5000069, 0, 0, 0, 4999931
-Bucket Stats: Max: 5000069, Min: 0, MaxMinDelta: 5000069
+Time to generate: 00:00:00.8392753
+Bucket Hits: 4997688, 0, 0, 0, 5002312
+Bucket Stats: Max: 5002312, Min: 0, MaxMinDelta: 5002312
 
 Algorithm: GetHashCode32
-Time to generate:  00:00:00.8295120
-Bucket Hits: 5000069, 0, 0, 0, 4999931
-Bucket Stats: Max: 5000069, Min: 0, MaxMinDelta: 5000069
+Time to generate: 00:00:00.8378993
+Bucket Hits: 4997688, 0, 0, 0, 5002312
+Bucket Stats: Max: 5002312, Min: 0, MaxMinDelta: 5002312
 
 Algorithm: DotNetCoreStableStringHash
-Time to generate:  00:00:00.7690728
-Bucket Hits: 5000173, 0, 0, 0, 4999827
-Bucket Stats: Max: 5000173, Min: 0, MaxMinDelta: 5000173
+Time to generate: 00:00:00.7803366
+Bucket Hits: 4999034, 0, 0, 0, 5000966
+Bucket Stats: Max: 5000966, Min: 0, MaxMinDelta: 5000966
 
 Algorithm: RandomKey
-Time to generate:  00:00:19.0113142
-Bucket Hits: 1999427, 1999226, 2000978, 2000791, 1999578
-Bucket Stats: Max: 2000978, Min: 1999226, MaxMinDelta: 1752
+Time to generate: 00:00:17.8780455
+Bucket Hits: 2000856, 1997936, 2000415, 2000030, 2000763
+Bucket Stats: Max: 2000856, Min: 1997936, MaxMinDelta: 2920
 
 Algorithm: GuidBasedKey
-Time to generate:  00:00:01.3039845
-Bucket Hits: 1999525, 1999072, 2000115, 2001941, 1999347
-Bucket Stats: Max: 2001941, Min: 1999072, MaxMinDelta: 2869
+Time to generate: 00:00:01.3107351
+Bucket Hits: 2000758, 2000682, 1999633, 1998893, 2000034
+Bucket Stats: Max: 2000758, Min: 1998893, MaxMinDelta: 1865
 ```

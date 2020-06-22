@@ -30,13 +30,17 @@ namespace HashSpeedTest
 
         private static void RecordBucketHit(List<ulong> buckHitLog, int numBuckets, long value)
         {
-            ulong bucketSize = ulong.MaxValue / (ulong)numBuckets;
+            // The number of possible values of a long is bigger than will fit in a long so we just use
+            // the MaxValue of ulong since they have the same number of bits so the number of possible values.
+            long bucketSize = (long)(ulong.MaxValue / (ulong)numBuckets);
             for (int i = 1; i <= numBuckets; i++)
             {
                 int bucketIndex = numBuckets - i;
 
-                ulong bucketMinimum = ulong.MaxValue - ((ulong)i) * bucketSize;
-                if ((ulong)value >= bucketMinimum ||
+                // we want to stay using longs here so we don't get 
+                // sign extension affecting our buckets
+                long bucketMinimum = long.MaxValue - i * bucketSize;
+                if ((long)value >= bucketMinimum ||
                     bucketIndex == 0)
                 {
                     buckHitLog[bucketIndex] += 1;

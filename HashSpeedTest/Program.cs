@@ -65,7 +65,7 @@ namespace HashSpeedTest
 
             Console.WriteLine();
             Console.WriteLine($"Algorithm: {algorithmName}");
-            Console.WriteLine($"Time to generate:  {stopWatch.Elapsed}");
+            Console.WriteLine($"Time to generate: {stopWatch.Elapsed}");
             Console.WriteLine($"Bucket Hits: {string.Join(", ", bucketHits.Select(h => ((ulong)h).ToString()))}");
             Console.WriteLine($"Bucket Stats: Max: {bucketHits.Max()}, Min: {bucketHits.Min()}, MaxMinDelta: {bucketHits.Max() - bucketHits.Min()}");
         }

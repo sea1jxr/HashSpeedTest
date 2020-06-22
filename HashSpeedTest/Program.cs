@@ -37,8 +37,8 @@ namespace HashSpeedTest
             {
                 int bucketIndex = numBuckets - i;
 
-                // we want to stay using longs here so we don't get 
-                // sign extension affecting our buckets
+                // we want to stay using longs here so we don't get
+                // the sign bit affecting our buckets
                 long bucketMinimum = long.MaxValue - i * bucketSize;
                 if ((long)value >= bucketMinimum ||
                     bucketIndex == 0)

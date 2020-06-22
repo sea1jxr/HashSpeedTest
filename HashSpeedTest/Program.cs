@@ -65,8 +65,8 @@ namespace HashSpeedTest
 
             Console.WriteLine();
             Console.WriteLine($"{algorithmName} took: {stopWatch.Elapsed}");
-            Console.WriteLine($"BucketHits: {string.Join(", ", bucketHits.Select(h => ((ulong)h).ToString()))}");
-            Console.WriteLine($"Max: {bucketHits.Max()}, Min: {bucketHits.Min()}, MaxMinDelta: {bucketHits.Max() - bucketHits.Min()}");
+            Console.WriteLine($"Bucket Hits: {string.Join(", ", bucketHits.Select(h => ((ulong)h).ToString()))}");
+            Console.WriteLine($"Bucket Stats: Max: {bucketHits.Max()}, Min: {bucketHits.Min()}, MaxMinDelta: {bucketHits.Max() - bucketHits.Min()}");
         }
 
         private static long ComputeCrc32(string value1, string value2)

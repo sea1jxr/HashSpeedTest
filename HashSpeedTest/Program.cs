@@ -18,6 +18,7 @@ namespace HashSpeedTest
                 testValuePart2s.Add(Guid.NewGuid().ToString());
             }
 
+            Console.WriteLine($"Iterations: {testValuePart1s.Count}");
             TimeAlgorithm(testValuePart1s, testValuePart2s, ComputeCrc32, "CRC32");
             TimeAlgorithm(testValuePart1s, testValuePart2s, ComputeFnv, "Fnv1a");
             TimeAlgorithm(testValuePart1s, testValuePart2s, ComputeGetHashCode, "GetHashCode");
@@ -63,7 +64,6 @@ namespace HashSpeedTest
             stopWatch.Stop();
 
             Console.WriteLine();
-            Console.WriteLine($"Iterations: {testValuePart1s.Count}");
             Console.WriteLine($"{algorithmName} took: {stopWatch.Elapsed}");
             Console.WriteLine(string.Join(", ", bucketHits.Select(h => ((ulong)h).ToString())));
             Console.WriteLine($"Max: {bucketHits.Max()}, Min: {bucketHits.Min()}, MaxMinDelta: {bucketHits.Max() - bucketHits.Min()}");
